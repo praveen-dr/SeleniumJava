@@ -1,0 +1,30 @@
+package com.session2;
+
+import java.util.Scanner;
+
+public class Fibonacci {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// 0 1 1 2 3 5 8 13 21 34 55 89
+		int first = 0, prev = 1, next = 0;
+		next = first + prev;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter 'n' value");
+		
+		int n = sc.nextInt();
+		System.out.print(first + " " + prev + " " + next);
+		
+		while(next < n)
+		{
+			next = next + prev;
+			System.out.print(+next);
+			first = prev;
+			prev = next;
+			
+		} 
+		sc.close();
+		
+	}
+
+}

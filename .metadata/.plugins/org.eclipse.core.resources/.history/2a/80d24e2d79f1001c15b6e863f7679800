@@ -1,0 +1,21 @@
+package com.session2;
+
+import java.util.Scanner;
+
+public class EvenOddSum {
+
+	public static void main(String[] args) {
+		
+		int count = 1, int evenSum = 0, int oddSum = 0;
+		Scanner sc = new Scanner(System.in);
+		int limit = sc.nextInt();
+		
+		while(count < limit){
+			
+		}
+		
+		sc.close();
+
+	}
+
+}
